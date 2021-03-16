@@ -99,17 +99,8 @@ public class MyDate {
 		this.setYear(year);
 	}
 	
-	public static void main(String[] args) {
-		MyDate date1 = new MyDate();
-		MyDate date2 = new MyDate("13/10/2000");
-		MyDate date3 = new MyDate();
-		System.out.println("Date 1:");
-		System.out.println(date1.getDay() + "/" + date1.getMonth() + "/" + date1.getYear());
-		System.out.println("Date 2:");
-		System.out.println(date2.getDay() + "/" + date2.getMonth() + "/" + date2.getYear());
-		System.out.println("Date 3: ");
-		date3.accept();
-		System.out.println(date3.getDay() + "/" + date3.getMonth() + "/" + date3.getYear());
-		
+	public void print() {
+		System.out.println(this.day + "/" + this.month + "/" + this.year);
 	}
+	
 }
